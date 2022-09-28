@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+    <div class="card-body">
+        <div class="alert alert-danger" role="alert">
+            Задача <b>"{{task.title}}"</b> будет удалена. Продолжить?<br>
+        </div>
+        <form action="{% url 'task-delete-confirm' task.pk %}" method="POST">
+            {% csrf_token %}
+            <a class="btn btn-secondary" style="min-width: 100px;" href="{{ task.get_absolute_url }}">Нет</a>
+            <input class="btn btn-danger" style="min-width: 100px;" type="submit" value="Да">
+        </form>
+    </div>
+</div>
+{% endblock content %}
