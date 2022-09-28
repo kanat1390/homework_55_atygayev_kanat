@@ -16,7 +16,7 @@
     <div class="container mx-auto mt-5" style="width:400px;">
         <h1 class="text-center">Todo App</h1>
         <div class="btn-group mb-3 mt-3" style="width:100%;">
-            <a href="#" class="btn btn-primary" style="width:50%">Список задач</a>
+            <a href="{% url 'task-list' %}" class="btn btn-primary" style="width:50%">Список задач</a>
             <a href="#" class="btn btn-primary" style="width:50%">Добавить задачу</a>
         </div>
         {% block content %}
