@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block menu %}
+<div class="btn-group mb-3 mt-3" style="width:100%;">
+    <a href="{% url 'task-list' %}" class="btn btn-secondary" style="width:50%">Назад</a>
+    <a href="#" class="btn btn-primary" style="width:50%">Редактировать</a>
+    <a href="#" class="btn btn-primary" style="width:50%">Удалить</a>
+</div>
+{% endblock menu %}
+{% block content %}
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        {{task.title}}
+    </div>
+    <div class="card-body">
+        <p>{{task.description}}</p>
+        <div>
+            <div>
+                <small style="text-align: right;">Статус: {{ task.get_status_display }}</small><br>
+                <small style="text-align: right;">Выполнить до: {{ task.date_due }}</small>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

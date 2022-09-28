@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 
+{% block menu %}
+<div class="btn-group mb-3 mt-3" style="width:100%;">
+    <a href="{% url 'task-list' %}" class="btn btn-primary" style="width:50%">Список задач</a>
+    <a href="#" class="btn btn-primary" style="width:50%">Добавить задачу</a>
+</div>
+{% endblock menu %}
+
 {% block content %}
 <div class="list-group">
     {% for task in task_list %}
