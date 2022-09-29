@@ -27,12 +27,12 @@
     "model": "todo.task",
     "pk": 9,
     "fields": {
-        "title": "Разработать скрипт",
+        "title": "Разработать скрипт изменена",
         "description": "<p>Разработать скрипт по актуализации данных Atoll <strong>и живой сетью</strong></p>",
         "status": "N",
         "date_due": "2022-10-31",
-        "deleted_at": null,
-        "is_deleted": false
+        "deleted_at": "2022-09-29T16:05:37.498Z",
+        "is_deleted": true
     }
 },
 {
@@ -349,6 +349,24 @@
         "is_staff": true,
         "is_active": true,
         "date_joined": "2022-09-28T17:17:09.336Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$U033V7rAJIahk9NjeYPLRJ$4WhSsm0dv2McoIQqjzNvoiGnG5m7IYUZWInzphch3p4=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "root",
+        "first_name": "",
+        "last_name": "",
+        "email": "root@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-09-29T16:04:42.857Z",
         "groups": [],
         "user_permissions": []
     }
