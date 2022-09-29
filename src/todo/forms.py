@@ -1,6 +1,9 @@
 from django import forms
 from .models import Task
 
+class DatePickerInput(forms.DateInput):
+    input_type = 'date'
+
 class TaskForm(forms.ModelForm):
     class Meta:
         model = Task
@@ -13,7 +16,6 @@ class TaskForm(forms.ModelForm):
         }
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder':'Название задачи'}),
-            'description': forms.Textarea(attrs={'class': 'form-control', 'placeholder':'Название задачи'}),
             'status': forms.Select(attrs={'class': 'form-control form-control-custom'}),
-            'date_due': forms.TextInput(attrs={'class': 'form-control  form-control-custom', 'placeholder':'day/month/year'}),
+            'date_due': DatePickerInput(),
         }
