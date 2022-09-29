@@ -7,24 +7,5 @@
 </div>
 {% endblock menu %}
 {% block content %}
-<div class="card">
-    <div class="card-header bg-primary text-white">
-        {{task.title}}
-    </div>
-    <div class="card-body">
-        <p>{{task.description|safe}}</p>
-        <div>
-            <div>
-                {% if task.status == "N" %}
-                <small class="text-success" style="text-align: right;">Статус: {{ task.get_status_display }}</small>
-                {% else %}
-                <small class="text-secondary" style="text-align: right;">Статус: {{ task.get_status_display }}</small>
-                {% endif %}
-                <br>
-                <small style="text-align: right;">Выполнить до: {{ task.date_due }}</small>
-            </div>
-        </div>
-
-    </div>
-</div>
+{% include 'todo/partial/task_item.html' with task=task %}
 {% endblock content %}

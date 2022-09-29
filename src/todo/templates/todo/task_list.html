@@ -8,9 +8,11 @@
 {% endblock menu %}
 
 {% block content %}
-<div class="list-group">
-    {% for task in task_list %}
-    {% include 'todo/partial/task_list_item.html' %}
-    {% endfor %}
-</div>
+<form action="" method="post">
+    <div class="list-group">
+        {% for task in task_list %}
+        {% include 'todo/partial/task_list_item.html' %}
+        {% endfor %}
+    </div>
+</form>
 {% endblock content %}
