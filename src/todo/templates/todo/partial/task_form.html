@@ -1,0 +1,11 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="btn-group mb-3 mt-3" style="width:100%;">
+        <a href="{{ cancel_url }}" class="btn btn-secondary" style="width:50%">Назад</a>
+        <input type="submit" class="btn btn-success" style="width:50%" value="{{btn_message}}">
+    </div>
+    <div class="card p-2">
+        {{ form.media }}
+        {{ form.as_p }}
+    </div>
+</form>

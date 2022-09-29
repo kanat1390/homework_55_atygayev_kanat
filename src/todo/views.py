@@ -47,6 +47,7 @@ def task_update(request, pk):
         return redirect(reverse('task-detail', kwargs={'pk':task.id}))
     context = {
         'form': form,
+        'task': task,
     }
     return render(request, 'todo/task_update.html', context)
 
