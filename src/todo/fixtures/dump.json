@@ -1,0 +1,380 @@
+[
+{
+    "model": "todo.task",
+    "pk": 1,
+    "fields": {
+        "title": "Стать программистом",
+        "description": "Требуется упорно заниматься не жалея времени и сил",
+        "status": "N",
+        "date_due": "2022-09-28",
+        "deleted_at": "2022-09-28T20:23:51.839Z",
+        "is_deleted": true
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 2,
+    "fields": {
+        "title": "Вторая задача",
+        "description": "<p>Описание</p>",
+        "status": "N",
+        "date_due": "2022-09-30",
+        "deleted_at": "2022-09-29T11:54:40.454Z",
+        "is_deleted": true
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 3,
+    "fields": {
+        "title": "Задача номер 3 изменена",
+        "description": "Описание задачи номер 3",
+        "status": "C",
+        "date_due": null,
+        "deleted_at": "2022-09-29T11:54:40.458Z",
+        "is_deleted": true
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 4,
+    "fields": {
+        "title": "Новая задача 4",
+        "description": "<p>Описание задачи 4</p>",
+        "status": "N",
+        "date_due": null,
+        "deleted_at": "2022-09-29T11:54:34.604Z",
+        "is_deleted": true
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 5,
+    "fields": {
+        "title": "Новая задача",
+        "description": "",
+        "status": "N",
+        "date_due": null,
+        "deleted_at": null,
+        "is_deleted": false
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 6,
+    "fields": {
+        "title": "задача 2",
+        "description": "<p>Описание</p>",
+        "status": "N",
+        "date_due": "2022-10-02",
+        "deleted_at": "2022-09-29T14:35:45.179Z",
+        "is_deleted": true
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add task model",
+        "content_type": 7,
+        "codename": "add_taskmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change task model",
+        "content_type": 7,
+        "codename": "change_taskmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete task model",
+        "content_type": 7,
+        "codename": "delete_taskmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view task model",
+        "content_type": 7,
+        "codename": "view_taskmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add task",
+        "content_type": 7,
+        "codename": "add_task"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change task",
+        "content_type": 7,
+        "codename": "change_task"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete task",
+        "content_type": 7,
+        "codename": "delete_task"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view task",
+        "content_type": 7,
+        "codename": "view_task"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$vUe4FvmTGU9ZCeaSIwjrp1$1K2+x39X60Zi2YSEeNKs44egzR7KY+8tvI7As9fxNk4=",
+        "last_login": "2022-09-29T08:23:21.094Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-09-28T17:17:09.336Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
