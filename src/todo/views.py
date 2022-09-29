@@ -1,3 +1,4 @@
+from django.urls import reverse
 from django.shortcuts import render, redirect
 from todo.services import task_service
 from .forms import TaskForm
@@ -37,4 +38,16 @@ def task_create(request):
         'form': form,
     }
     return render(request, 'todo/task_create.html', context)
+
+def task_update(request, pk):
+    task = task_service.get_task_by_pk(pk)
+    form = TaskForm(request.POST or None, instance=task)
+    if form.is_valid():
+        form.save()
+        return redirect(reverse('task-detail', kwargs={'pk':task.id}))
+    context = {
+        'form': form,
+    }
+    return render(request, 'todo/task_update.html', context)
+
 
