@@ -11,6 +11,10 @@ class TaskManager(models.Manager):
     def get_queryset(self) -> QuerySet:
         return super().get_queryset().filter(is_deleted = False)
 
+class DeletedTaskManager(models.Manager):
+    def get_queryset(self) -> QuerySet:
+        return super().get_queryset().filter(is_deleted = True)
+
 class Task(models.Model):
     title = models.CharField(null=False, blank=False, max_length=40)
     description = RichTextField(null=True, blank=True, max_length=500)
@@ -20,6 +24,7 @@ class Task(models.Model):
     is_deleted = models.BooleanField(default=False)
     objects = models.Manager()
     tasks = TaskManager()
+    deleted_tasks = DeletedTaskManager()
 
 
     def get_absolute_url(self):

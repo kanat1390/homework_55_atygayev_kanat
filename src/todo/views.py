@@ -58,4 +58,17 @@ def task_batch_delete(request):
             task_service.soft_delete_by_pk(pk)
     return redirect('task-list')
 
+def task_recover(request):
+    task_list = task_service.get_deleted_task_list()
+    context = {
+        'task_list': task_list,
+    }
+    return render(request, 'todo/task_recover.html', context)
+
+def task_batch_recovery(request):
+    task_pk_list = request.POST.getlist('tasks')
+    if task_pk_list:
+        for pk in task_pk_list:
+            task_service.recovery_task_by_pk(pk)
+    return redirect('batch-recover')
 

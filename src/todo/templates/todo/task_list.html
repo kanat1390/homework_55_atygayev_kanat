@@ -11,8 +11,11 @@
 {% if task_list %}
 <form action="{% url 'batch-delete' %}" method="POST">
     {% csrf_token %}
-    <div class="mb-3">
+    <div class="mb-3 d-flex gap-3">
         <input type="submit" value="" class="btn_batch_delete">
+        <div style="height:30px;">
+            Удаленные задачи возможно востановить <a href="{% url 'batch-recover' %}">здесь</a>
+        </div>
     </div>
     <div class="list-group">
         {% for task in task_list %}

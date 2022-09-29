@@ -36,6 +36,18 @@
     }
 },
 {
+    "model": "todo.task",
+    "pk": 10,
+    "fields": {
+        "title": "Купить квартиру",
+        "description": "",
+        "status": "N",
+        "date_due": "2023-06-13",
+        "deleted_at": null,
+        "is_deleted": false
+    }
+},
+{
     "model": "auth.permission",
     "pk": 1,
     "fields": {
