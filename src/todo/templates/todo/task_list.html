@@ -8,6 +8,7 @@
 {% endblock menu %}
 
 {% block content %}
+{% if task_list %}
 <form action="{% url 'batch-delete' %}" method="POST">
     {% csrf_token %}
     <div class="mb-3">
@@ -19,4 +20,9 @@
         {% endfor %}
     </div>
 </form>
+{% else %}
+<div class="alert alert-primary text-center" role="alert">
+    Список задач пуст
+</div>
+{% endif%}
 {% endblock content %}
