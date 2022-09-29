@@ -1,74 +1,38 @@
 [
 {
     "model": "todo.task",
-    "pk": 1,
+    "pk": 7,
     "fields": {
-        "title": "Стать программистом",
-        "description": "Требуется упорно заниматься не жалея времени и сил",
-        "status": "N",
-        "date_due": "2022-09-28",
-        "deleted_at": "2022-09-28T20:23:51.839Z",
-        "is_deleted": true
-    }
-},
-{
-    "model": "todo.task",
-    "pk": 2,
-    "fields": {
-        "title": "Вторая задача",
-        "description": "<p>Описание</p>",
-        "status": "N",
-        "date_due": "2022-09-30",
-        "deleted_at": "2022-09-29T11:54:40.454Z",
-        "is_deleted": true
-    }
-},
-{
-    "model": "todo.task",
-    "pk": 3,
-    "fields": {
-        "title": "Задача номер 3 изменена",
-        "description": "Описание задачи номер 3",
-        "status": "C",
-        "date_due": null,
-        "deleted_at": "2022-09-29T11:54:40.458Z",
-        "is_deleted": true
-    }
-},
-{
-    "model": "todo.task",
-    "pk": 4,
-    "fields": {
-        "title": "Новая задача 4",
-        "description": "<p>Описание задачи 4</p>",
-        "status": "N",
-        "date_due": null,
-        "deleted_at": "2022-09-29T11:54:34.604Z",
-        "is_deleted": true
-    }
-},
-{
-    "model": "todo.task",
-    "pk": 5,
-    "fields": {
-        "title": "Новая задача",
+        "title": "Переехать в Германию",
         "description": "",
         "status": "N",
-        "date_due": null,
+        "date_due": "2023-06-13",
         "deleted_at": null,
         "is_deleted": false
     }
 },
 {
     "model": "todo.task",
-    "pk": 6,
+    "pk": 8,
     "fields": {
-        "title": "задача 2",
-        "description": "<p>Описание</p>",
+        "title": "Стать программистом",
+        "description": "<p>Для выполнения данной задачи требуется в первую очередь упорство.</p>",
         "status": "N",
-        "date_due": "2022-10-02",
-        "deleted_at": "2022-09-29T14:35:45.179Z",
-        "is_deleted": true
+        "date_due": "2022-12-31",
+        "deleted_at": null,
+        "is_deleted": false
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 9,
+    "fields": {
+        "title": "Разработать скрипт",
+        "description": "<p>Разработать скрипт по актуализации данных Atoll <strong>и живой сетью</strong></p>",
+        "status": "N",
+        "date_due": "2022-10-31",
+        "deleted_at": null,
+        "is_deleted": false
     }
 },
 {
@@ -364,7 +328,7 @@
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$390000$vUe4FvmTGU9ZCeaSIwjrp1$1K2+x39X60Zi2YSEeNKs44egzR7KY+8tvI7As9fxNk4=",
-        "last_login": "2022-09-29T08:23:21.094Z",
+        "last_login": "2022-09-29T14:44:21.144Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",

@@ -3,7 +3,7 @@ from django.shortcuts import get_object_or_404
 import datetime
 
 def get_task_list():
-    return Task.tasks.all()
+    return Task.tasks.order_by('date_due')
 
 def get_task_by_pk(pk):
     return get_object_or_404(Task, pk=pk)
