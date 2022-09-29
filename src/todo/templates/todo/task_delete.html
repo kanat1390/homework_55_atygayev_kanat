@@ -2,7 +2,7 @@
 {% block content %}
 <div class="card">
     <div class="card-body">
-        <div class="alert alert-danger" role="alert">
+        <div class="alert alert-light" style="color:black" role="alert">
             Задача <b>"{{task.title}}"</b> будет удалена. Продолжить?<br>
         </div>
         <form action="{% url 'task-delete-confirm' task.pk %}" method="POST">

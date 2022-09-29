@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="btn-group mb-3 mt-3" style="width:100%;">
+        <a href="{% url 'task-list' %}" class="btn btn-secondary" style="width:50%">Назад</a>
+        <input type="submit" class="btn btn-success" style="width:50%" value="Сохранить">
+    </div>
+    <div class="card p-2">
+        {{ form.as_p }}
+    </div>
+</form>
+{% endblock content %}

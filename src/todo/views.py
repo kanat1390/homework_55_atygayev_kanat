@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from todo.services import task_service
+from .forms import TaskForm
 
 def task_list(request):
     task_list = task_service.get_task_list()
@@ -25,4 +26,15 @@ def task_delete(request, pk):
 def task_delete_confirm(request, pk):
     task_service.soft_delete_by_pk(pk)
     return redirect('task-list')
+
+
+def task_create(request):
+    form = TaskForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('task-list')
+    context = {
+        'form': form,
+    }
+    return render(request, 'todo/task_create.html', context)
 
