@@ -51,4 +51,11 @@ def task_update(request, pk):
     }
     return render(request, 'todo/task_update.html', context)
 
+def task_batch_delete(request):
+    task_pk_list = request.POST.getlist('tasks')
+    if task_pk_list:
+        for pk in task_pk_list:
+            task_service.soft_delete_by_pk(pk)
+    return redirect('task-list')
+
 

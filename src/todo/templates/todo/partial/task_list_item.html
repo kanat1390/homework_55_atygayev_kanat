@@ -1,1 +1,4 @@
-<a href="{{ task.get_absolute_url }}" class="list-group-item list-group-item-action">{{ task.title }}</a>
+<div class="d-flex gap-3">
+    <input type="checkbox" name="tasks" value="{{task.pk}}" />
+    <a href="{{ task.get_absolute_url }}" class="list-group-item list-group-item-action">{{ task.title }}</a>
+</div>
